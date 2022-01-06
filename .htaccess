@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^admin/?$ admin/
+RewriteRule ^/?$ views/public/index.php
+RewriteRule ^unidades/?$ views/public/unidades.php
+RewriteRule ^historico/?$ pages/historico.php 
+RewriteRule ^sobre/?$ views/public/sobre.php
+RewriteRule ^saude/?$ pages/companhias/saude.php
+RewriteRule ^supri/?$ pages/companhias/supri.php
+RewriteRule ^mnt/?$ pages/companhias/mnt.php
+RewriteRule ^gallery/?$ pages/gallery.php
+RewriteRule ^galleryPhoto/?$ pages/galleryPhoto.php
+RewriteRule ^edicao/?$ http://10.1.196.90/intranet25blogesAnt/edicao/
